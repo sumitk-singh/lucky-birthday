@@ -1,53 +1,57 @@
 :root {
-    --primary-color: rgb(5, 25, 204);
+    --primary-color: rgb(79, 3, 88);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Farro&family=PT+Sans&family=Roboto+Mono:wght@300&family=Roboto:wght@100&display=swap');
 body {
-    font-family: sans-serif;
     text-align: center;
-    margin-left: 25%;
     margin-top: 5%;
-    margin-right: 25%;
+    background-color: var(--primary-color);
+    color: rgb(197, 197, 197);
+    font-family: 'Farro', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
-h1 {
-    color: var(--primary-color);
-}
-
-#bill-amount-input,
-#cash-given-input {
-    margin: 10px;
-    height: 15px;
-    width: 180px;
-    padding: 15px;
+.input-container {
+    margin-top: 5%;
+    border-style: solid;
+    border-width: 1px;
     border-radius: 15px;
-    border-color: var(--primary-color);
-    font-weight: bold;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 20px;
+    background-color: rgb(51, 51, 51);
+    border-color: rgb(197, 11, 197);
+}
+
+:hover .input-container {
+    box-shadow: rgb(245, 9, 225) 0px 0px 500px;
+}
+
+.input-container-element {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 30px;
+    font-size: 25px;
+}
+
+#date-input,
+#lucky-number-input {
+    width: 250px;
+    text-align: center;
+    font-size: 25px;
 }
 
 #btn {
-    background-color: var(--primary-color);
-    color: white;
-    margin: 10px;
-    height: 35px;
+    background: rgb(147, 2, 160);
     width: 150px;
-    border-radius: 15px;
-}
-
-table {
-    border-collapse: collapse;
-}
-
-td,
-th {
-    margin-top: 15px;
-    border-color: var(--primary-color);
-    border-style: solid;
-    width: 200px;
     height: 45px;
-    border-collapse: collapse;
+    color: white;
+    border-radius: 10px;
 }
 
 footer {
-    margin-top: 100px;
+    margin-top: 300px;
 }
